@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мониторинг конкурентов | AI Ассистент</title>
+    <link rel="icon" href="/favicon.ico" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="app-wrap">
+        <div class="flag-block">
+            <div class="flag-pole"></div>
+            <div class="flag-wrap">
+                <div class="flag-rf">
+                    <div class="stripe stripe-w"></div>
+                    <div class="stripe stripe-b"></div>
+                    <div class="stripe stripe-r"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <header class="header">
+                <h1>Мониторинг конкурентов</h1>
+                <p class="subtitle">Анализ текста, изображений и сайтов через AI</p>
+            </header>
+
+        <nav class="tabs">
+            <button class="tab active" data-tab="text">Анализ текста</button>
+            <button class="tab" data-tab="image">Анализ изображения</button>
+            <button class="tab" data-tab="parse">Парсинг сайта</button>
+            <button class="tab" data-tab="history">История</button>
+        </nav>
+
+        <main>
+            <section id="panel-text" class="panel active">
+                <label>Текст конкурента (минимум 10 символов)</label>
+                <textarea id="text-input" rows="5" placeholder="Вставьте описание продукта, лендинга или рекламы конкурента..."></textarea>
+                <button id="btn-analyze-text">Проанализировать</button>
+            </section>
+
+            <section id="panel-image" class="panel">
+                <label>Загрузите изображение (баннер, сайт, упаковка)</label>
+                <input type="file" id="image-input" accept="image/jpeg,image/png,image/gif,image/webp">
+                <button id="btn-analyze-image">Проанализировать</button>
+            </section>
+
+            <section id="panel-parse" class="panel">
+                <label>URL сайта конкурента</label>
+                <input type="url" id="parse-input" placeholder="https://example.com">
+                <button id="btn-parse">Парсить и анализировать</button>
+            </section>
+
+            <section id="panel-history" class="panel">
+                <button id="btn-clear-history">Очистить историю</button>
+                <div id="history-list"></div>
+            </section>
+
+            <div id="result" class="result"></div>
+            <div id="loading" class="loading" style="display:none;">Загрузка…</div>
+            <div id="error" class="error" style="display:none;"></div>
+        </main>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>

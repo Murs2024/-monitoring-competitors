@@ -1,0 +1,5 @@
+# Дополнительно к requirements.txt — для десктоп-приложения и сборки exe
+-r requirements.txt
+PyQt6>=6.4
+PyQt6-WebEngine>=6.4
+pyinstaller>=6.0
