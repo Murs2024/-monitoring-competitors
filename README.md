@@ -195,4 +195,4 @@ git push -u origin main
 
 ---
 
-*ДЗ PEm08: окружение → адаптация моделей → Selenium-парсинг → сборка desktop (PyQt6 + PyInstaller) → публикация на GitHub с README.*
+*ДЗ PEm08: окружение → адаптация моделей → Selenium-парсинг → сборка desktop (PyQt6 + PyInstaller) → публикация на GitHub с README.**
